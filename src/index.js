@@ -8,11 +8,11 @@ import Home from './views/home'
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Route component={NotFound} path="**" />
+     <Router>
+      <Switch>
         <Route component={Home} exact path="/" />
-      </div>
+        <Route component={NotFound} />
+      </Switch>
     </Router>
   )
 }
