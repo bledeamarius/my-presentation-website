@@ -1,0 +1,57 @@
+.skill-component-container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.skill-component-container1 {
+  flex: 0 0 auto;
+  width: 343px;
+  height: 223px;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #0a1327;
+}
+.skill-component-imagevector {
+  width: auto;
+  height: 28px;
+  margin-top: var(--dl-space-space-tripleunit);
+  object-fit: cover;
+  margin-left: var(--dl-space-space-fourunits);
+}
+.skill-component-title {
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 600;
+  margin-left: var(--dl-space-space-fourunits);
+  margin-right: var(--dl-space-space-fourunits);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.skill-component-desc {
+  color: #ffffff;
+  font-size: 14;
+  font-weight: 400;
+  margin-left: var(--dl-space-space-fourunits);
+  margin-right: var(--dl-space-space-fourunits);
+}
+
+
+
+
+
+
+@media(max-width: 1200px) {
+  .skill-component-root-class-name {
+    width: auto;
+  }
+}
