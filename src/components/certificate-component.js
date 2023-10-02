@@ -8,8 +8,8 @@ const CertificateComponent = (props) => {
   return (
     <div className="certificate-component-container">
       <img
-        src={props.image_src}
         alt={props.image_alt}
+        src={props.image_src}
         className="certificate-component-image"
       />
     </div>
@@ -17,13 +17,13 @@ const CertificateComponent = (props) => {
 }
 
 CertificateComponent.defaultProps = {
-  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   image_alt: 'image',
+  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
 }
 
 CertificateComponent.propTypes = {
-  image_src: PropTypes.string,
   image_alt: PropTypes.string,
+  image_src: PropTypes.string,
 }
 
 export default CertificateComponent

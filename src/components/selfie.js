@@ -8,8 +8,8 @@ const Selfie = (props) => {
   return (
     <div className="selfie-container">
       <img
-        src={props.image_src}
         alt={props.image_alt}
+        src={props.image_src}
         className="selfie-image"
       />
     </div>
@@ -17,13 +17,13 @@ const Selfie = (props) => {
 }
 
 Selfie.defaultProps = {
-  image_src: '/selfie.svg',
   image_alt: 'image',
+  image_src: '/selfie.svg',
 }
 
 Selfie.propTypes = {
-  image_src: PropTypes.string,
   image_alt: PropTypes.string,
+  image_src: PropTypes.string,
 }
 
 export default Selfie

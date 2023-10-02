@@ -13,10 +13,10 @@ const Home = (props) => {
         <meta property="og:title" content="Presentation Page" />
       </Helmet>
       <div className="home-header"></div>
-      <div className="home-about-me">
+      <div className="home-about-me-hero">
         <div className="home-hero-text-container">
           <h1 className="home-name">Marius Bledea</h1>
-          <h2 className="home-title">DevOps Enginere | Cloud Arhitect</h2>
+          <h2 className="home-title">DevOps Engineer | Cloud Arhitect</h2>
           <span className="home-short-description">
             <span>DevOps Engineer experienced in</span>
             <br className="home-text01 Section-Text"></br>
@@ -24,7 +24,7 @@ const Home = (props) => {
             <br className="home-text03 Section-Text"></br>
             <span>Cloud Native Solutions.</span>
           </span>
-          <div className="home-container1">
+          <div className="home-container-buttons">
             <a href="#contact" autoFocus className="home-cta-btn button">
               <span>
                 <span className="Anchor home-text06">Get in Touch</span>
@@ -44,22 +44,22 @@ const Home = (props) => {
         <span className="home-about-me">About Me</span>
         <div id="subtitles" className="home-section-separator1"></div>
       </div>
-      <div id="aboutme" className="home-about-me1">
-        <div className="home-container2">
+      <div id="aboutme" className="home-about-me-content">
+        <div className="home-container1">
           <img
             alt="image"
             src="/selfie.svg"
             loading="eager"
             className="home-image"
           />
-          <div className="home-container3">
+          <div className="home-container2">
             <img
               alt="image"
               src="/quotes.svg"
               loading="lazy"
               className="home-quotes"
             />
-            <div className="home-container4">
+            <div className="home-container3">
               <span className="home-text11">
                 Empowering Efficiency Through DevOps: Relentlessly Automating,
                 Never ClickOps.
@@ -67,8 +67,8 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-container5"></div>
-        <div className="home-container6">
+        <div className="home-container4"></div>
+        <div className="home-container5">
           <div className="home-heading-container">
             <span className="home-description">
               <span>
@@ -87,7 +87,7 @@ const Home = (props) => {
               </span>
               <br className="home-text15"></br>
               <span>
-                With my expertise I can help streamline your development and
+                 With my expertise I can help streamline your development and
                 deployment workflows. Contact me to discuss your project
                 requirements and find out how I can contribute to your team.
               </span>
@@ -101,7 +101,7 @@ const Home = (props) => {
                 <br></br>
               </span>
             </div>
-            <div className="home-container7">
+            <div className="home-container6">
               <span className="home-plus">
                 <span className="home-text20">+</span>
                 <br></br>
@@ -174,42 +174,42 @@ const Home = (props) => {
       <div id="skills" className="home-skills1"></div>
       <div className="home-container-skills">
         <SkillComponent
-          rootClassName="skill-component-root-class-name"
-          image_src="/azure.svg"
-          image_src1="/azure.svg"
           text="lkj"
           text2="Azure Infrastructure Design and Implementation"
           text21="Implements and manages Azure infrastructure using Terraform."
+          image_src="/azure.svg"
+          image_src1="/azure.svg"
+          rootClassName="skill-component-root-class-name"
         ></SkillComponent>
         <SkillComponent
-          rootClassName="skill-component-root-class-name3"
-          image_src1="/kube.svg"
           text2="Kubernetes and Container Orchestration"
           text21="Proficient in container orchestration with Kubernetes."
+          image_src1="/kube.svg"
+          rootClassName="skill-component-root-class-name3"
         ></SkillComponent>
         <SkillComponent
-          rootClassName="skill-component-root-class-name4"
-          image_src1="/terraform.svg"
           text2="Infrastructure as Code (IaC) Expertise"
           text21="Proficient in writing infrastructure as code (IaC) templates, ensuring consistent and reproducible deployments while reducing manual intervention"
+          image_src1="/terraform.svg"
+          rootClassName="skill-component-root-class-name4"
         ></SkillComponent>
         <SkillComponent
-          rootClassName="skill-component-root-class-name1"
-          image_src1="/cloud.svg"
           text2="Cloud Infrastructure Design and Optimization"
           text21="Designs and deploys cloud native solutions to optimize application performance and reliability."
+          image_src1="/cloud.svg"
+          rootClassName="skill-component-root-class-name1"
         ></SkillComponent>
         <SkillComponent
-          rootClassName="skill-component-root-class-name2"
-          image_src1="/security.svg"
           text2="Cloud Security and Compliance"
           text21="Implements robust security practices and compliance policies, to protect cloud environments and data."
+          image_src1="/security.svg"
+          rootClassName="skill-component-root-class-name2"
         ></SkillComponent>
         <SkillComponent
-          rootClassName="skill-component-root-class-name5"
-          image_src1="/pipeline1.svg"
           text2="CI/CD Pipelines"
           text21="Develops automated CI/CD pipelines to ensure rapid and reliable application deployment, testing, and delivery, promoting a DevOps culture."
+          image_src1="/pipeline1.svg"
+          rootClassName="skill-component-root-class-name5"
         ></SkillComponent>
       </div>
       <div id="about-us" className="home-about-us">
