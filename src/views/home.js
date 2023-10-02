@@ -16,7 +16,7 @@ const Home = (props) => {
       <div className="home-about-me">
         <div className="home-hero-text-container">
           <h1 className="home-name">Marius Bledea</h1>
-          <h2 className="home-title">DevOps Engineer | Cloud Arhitect</h2>
+          <h2 className="home-title">DevOps Enginere | Cloud Arhitect</h2>
           <span className="home-short-description">
             <span>DevOps Engineer experienced in</span>
             <br className="home-text01 Section-Text"></br>
@@ -87,7 +87,7 @@ const Home = (props) => {
               </span>
               <br className="home-text15"></br>
               <span>
-                 With my expertise I can help streamline your development and
+                With my expertise I can help streamline your development and
                 deployment workflows. Contact me to discuss your project
                 requirements and find out how I can contribute to your team.
               </span>
