@@ -39,7 +39,10 @@
 }
 .skill-component-desc {
   color: #ffffff;
+  width: auto;
+  height: 100%;
   font-size: 14;
+  max-width: var(--dl-size-size-maxcontent);
   font-weight: 400;
   margin-left: var(--dl-space-space-fourunits);
   margin-right: var(--dl-space-space-fourunits);
@@ -53,5 +56,10 @@
 @media(max-width: 1200px) {
   .skill-component-root-class-name {
     width: auto;
+  }
+}
+@media(max-width: 390px) {
+  .skill-component-desc {
+    font-size: 13px;
   }
 }

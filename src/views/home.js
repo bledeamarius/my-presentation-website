@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import SkillComponent from '../components/skill-component'
+import CertificateComponent from '../components/certificate-component'
 import './home.css'
 
 const Home = (props) => {
@@ -12,8 +13,52 @@ const Home = (props) => {
         <title>Presentation Page</title>
         <meta property="og:title" content="Presentation Page" />
       </Helmet>
-      <div className="home-header"></div>
-      <div className="home-about-me-hero">
+      <div className="home-header">
+        <div className="home-container-header">
+          <div className="home-sub-container-logo">
+            <a href="#about-me-hero" className="home-link">
+              <strong className="home-dev-ops-solutions">
+                Devops Solutions
+              </strong>
+            </a>
+            <a href="#about-me-hero" className="home-link1">
+              <img
+                alt="image"
+                src="/my_logo.svg"
+                loading="eager"
+                className="home-logo"
+              />
+            </a>
+          </div>
+          <a
+            href="https://www.linkedin.com/in/bledea-marius/"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="home-link2"
+          >
+            <img
+              alt="image"
+              src="/linkedin.svg"
+              loading="eager"
+              className="home-linkedin"
+            />
+          </a>
+          <a
+            href="https://github.com/bledeamarius"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="home-link3"
+          >
+            <img
+              alt="image"
+              src="/github.svg"
+              loading="lazy"
+              className="home-github"
+            />
+          </a>
+        </div>
+      </div>
+      <div id="about-me-hero" className="home-about-me-hero">
         <div className="home-hero-text-container">
           <h1 className="home-name">Marius Bledea</h1>
           <h2 className="home-title">DevOps Engineer | Cloud Arhitect</h2>
@@ -128,7 +173,7 @@ const Home = (props) => {
           <span>Skills and Expertise</span>
           <br></br>
         </span>
-        <div id="subtitles" className="home-section-separator3"></div>
+        <div className="home-section-separator3"></div>
       </div>
       <div id="skills" className="home-skills1"></div>
       <div className="home-container-skills">
@@ -171,188 +216,45 @@ const Home = (props) => {
           rootClassName="skill-component-root-class-name5"
         ></SkillComponent>
       </div>
-      <div id="about-us" className="home-about-us">
-        <div className="home-heading-container1">
-          <h2 className="home-text27 Section-Heading">
-            What&apos;s the story behind our product?
-          </h2>
-          <span className="home-secondary-text Section-Text">
-            {' '}
-            Lorem upsum dolor sit amet, consectetur adipiscing elit sed do
-            eiusmod.
-          </span>
-          <button className="home-cta-btn1 button Anchor">
-            START BUILDING
-          </button>
-        </div>
-        <div className="home-text-container">
-          <span className="home-text28 Section-Text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </span>
-          <span className="home-text29 Section-Text">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-            pariatur?
-          </span>
-        </div>
-        <button className="home-cta-btn2 button Anchor">START BUILDING</button>
+      <div className="home-skills-certs-separator">
+        <span className="home-certs">
+          <span>Certificates</span>
+          <br></br>
+        </span>
+        <div className="home-section-separator4"></div>
       </div>
-      <div className="home-section-separator4"></div>
-      <div className="home-testimonials">
-        <h2 className="home-text30 Section-Heading">
-          What are they saying about us?
-        </h2>
-        <div className="home-cards-container">
-          <div className="home-testimonial-card">
-            <div className="home-card-heading">
-              <div className="home-name-and-position">
-                <span className="Card-Heading">Will Evans</span>
-                <span className="home-position Card-Text">Position</span>
-              </div>
-              <div className="home-stars-container">
-                <svg viewBox="0 0 950.8571428571428 1024" className="home-icon">
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon02"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon04"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon06"
-                >
-                  <path d="M649.714 573.714l174.857-169.714-241.143-35.429-108-218.286-108 218.286-241.143 35.429 174.857 169.714-41.714 240.571 216-113.714 215.429 113.714zM950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 15.429-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon08"
-                >
-                  <path d="M649.714 573.714l174.857-169.714-241.143-35.429-108-218.286-108 218.286-241.143 35.429 174.857 169.714-41.714 240.571 216-113.714 215.429 113.714zM950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 15.429-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-              </div>
-            </div>
-            <span className="home-text31 Card-Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
-              nisi. Nulla quis sem at nibh elementum imperdiet.
-            </span>
-          </div>
-          <div className="home-testimonial-card1">
-            <div className="home-card-heading1">
-              <div className="home-name-and-position1">
-                <span className="Card-Heading">Marie Alba</span>
-                <span className="home-position1 Card-Text">Position</span>
-              </div>
-              <div className="home-stars-container1">
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon10"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon12"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon14"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon16"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon18"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-              </div>
-            </div>
-            <span className="home-text32 Card-Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
-              nisi. Nulla quis sem at nibh elementum imperdiet.
-            </span>
-          </div>
-          <div className="home-testimonial-card2">
-            <div className="home-card-heading2">
-              <div className="home-name-and-position2">
-                <span className="Card-Heading">Taylor Sam</span>
-                <span className="home-position2 Card-Text">Position</span>
-              </div>
-              <div className="home-stars-container2">
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon20"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon22"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon24"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon26"
-                >
-                  <path d="M950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 14.857-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-                <svg
-                  viewBox="0 0 950.8571428571428 1024"
-                  className="home-icon28"
-                >
-                  <path d="M649.714 573.714l174.857-169.714-241.143-35.429-108-218.286-108 218.286-241.143 35.429 174.857 169.714-41.714 240.571 216-113.714 215.429 113.714zM950.857 369.714c0 10.286-7.429 20-14.857 27.429l-207.429 202.286 49.143 285.714c0.571 4 0.571 7.429 0.571 11.429 0 15.429-6.857 28.571-23.429 28.571-8 0-16-2.857-22.857-6.857l-256.571-134.857-256.571 134.857c-7.429 4-14.857 6.857-22.857 6.857-16.571 0-24-13.714-24-28.571 0-4 0.571-7.429 1.143-11.429l49.143-285.714-208-202.286c-6.857-7.429-14.286-17.143-14.286-27.429 0-17.143 17.714-24 32-26.286l286.857-41.714 128.571-260c5.143-10.857 14.857-23.429 28-23.429s22.857 12.571 28 23.429l128.571 260 286.857 41.714c13.714 2.286 32 9.143 32 26.286z"></path>
-                </svg>
-              </div>
-            </div>
-            <span className="home-text33 Card-Text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              nec odio. Praesent libero. Sed cursus ante dapibus diam.c Sed
-              nisi. Nulla quis sem at nibh elementum imperdiet.
-            </span>
-          </div>
-        </div>
+      <div className="home-section-separator5"></div>
+      <div id="certificates" className="home-certicates-container">
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name"
+          image_src="/az-305.svg"
+          text="Microsoft Certified: Azure Solutions Architect Expert"
+        ></CertificateComponent>
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name5"
+          image_src="/az-400.svg"
+          text="Microsoft Certified: DevOps Engineer Expert"
+        ></CertificateComponent>
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name4"
+          image_src="/terraform1.svg"
+          text="HashiCorp Certified: Terraform Associate (002)"
+        ></CertificateComponent>
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name1"
+          image_src="/az-500.svg"
+          text="Microsoft Certified: Azure Security Engineer Associate"
+        ></CertificateComponent>
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name3"
+          image_src="/az-104.svg"
+          text="Microsoft Certified: Azure Administrator Associate"
+        ></CertificateComponent>
+        <CertificateComponent
+          rootClassName="certificate-component-root-class-name2"
+          image_src="/az-900.svg"
+          text="Microsoft Certified: Azure Fundamentals"
+        ></CertificateComponent>
       </div>
       <div id="contact" className="home-contact">
         <div className="home-content-container">
@@ -361,7 +263,7 @@ const Home = (props) => {
             <div className="home-email">
               <a
                 href="mailto:bledea.marius97@gmail.com?subject=DevOps Solutions request"
-                className="home-link"
+                className="home-link4"
               >
                 <img
                   alt="image"
@@ -378,7 +280,7 @@ const Home = (props) => {
               </a>
             </div>
             <div className="home-phone">
-              <a href="tel:+40751336708" className="home-link1">
+              <a href="tel:+40751336708" className="home-link5">
                 <img
                   alt="image"
                   src="/cellphone.svg"
@@ -393,33 +295,6 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <a
-        href="https://www.linkedin.com/in/bledea-marius/"
-        target="_blank"
-        rel="noreferrer noopener"
-        className="home-link2"
-      >
-        <img
-          alt="image"
-          src="/linkedin.svg"
-          loading="eager"
-          className="home-linkedin"
-        />
-      </a>
-      <a
-        href="https://github.com/bledeamarius"
-        target="_blank"
-        rel="noreferrer noopener"
-        className="home-link3"
-      >
-        <img
-          alt="image"
-          src="/github.svg"
-          loading="lazy"
-          className="home-github"
-        />
-      </a>
-      <strong className="home-dev-ops-solutions">Devops Solutions</strong>
     </div>
   )
 }
