@@ -58,7 +58,7 @@
   letter-spacing: 1px;
   text-decoration: none;
 }
-.home-link1 {
+.home-link01 {
   display: contents;
 }
 .home-logo {
@@ -79,7 +79,7 @@
   border-bottom-left-radius: var(--dl-radius-radius-radius2);
   border-bottom-right-radius: var(--dl-radius-radius-radius2);
 }
-.home-link2 {
+.home-link02 {
   display: contents;
 }
 .home-linkedin {
@@ -100,7 +100,7 @@
   border-bottom-left-radius: var(--dl-radius-radius-radius2);
   border-bottom-right-radius: var(--dl-radius-radius-radius2);
 }
-.home-link3 {
+.home-link03 {
   display: contents;
 }
 .home-github {
@@ -131,7 +131,7 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   background-size: cover;
   justify-content: space-between;
-  background-image: url("/adobestock.svg");
+  background-image: url("/adobestock-1500w.png");
   border-top-right-radius: var(--dl-radius-radius-radius2);
 }
 .home-hero-text-container {
@@ -239,10 +239,12 @@
 }
 .home-section-separator1 {
   width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 1px;
   display: flex;
   align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: dashed;
+  border-width: 1px;
   flex-direction: column;
   background-color: var(--dl-color-gray-700);
 }
@@ -441,10 +443,12 @@
 }
 .home-section-separator3 {
   width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 1px;
   display: flex;
   align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: dashed;
+  border-width: 1px;
   flex-direction: column;
   background-color: var(--dl-color-gray-700);
 }
@@ -488,11 +492,15 @@
 }
 .home-section-separator4 {
   width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 1px;
   display: flex;
   align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: dashed;
+  border-width: 1px;
+  margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
+  padding-bottom: 0px;
   background-color: var(--dl-color-gray-700);
 }
 .home-section-separator5 {
@@ -515,6 +523,83 @@
   padding-right: 15%;
   flex-direction: row;
   justify-content: flex-start;
+}
+.home-link04 {
+  display: contents;
+}
+.home-component06 {
+  text-decoration: none;
+}
+.home-link05 {
+  display: contents;
+}
+.home-component07 {
+  text-decoration: none;
+}
+.home-link06 {
+  display: contents;
+}
+.home-component08 {
+  text-decoration: none;
+}
+.home-link07 {
+  display: contents;
+}
+.home-component09 {
+  text-decoration: none;
+}
+.home-link08 {
+  display: contents;
+}
+.home-component10 {
+  text-decoration: none;
+}
+.home-link09 {
+  display: contents;
+}
+.home-component11 {
+  text-decoration: none;
+}
+.home-certs-work-exp-separator {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-tripleunit);
+  padding-left: 15%;
+  padding-right: 15%;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+.home-work-exp {
+  color: rgb(249, 245, 245);
+  width: auto;
+  height: auto;
+  font-size: 36px;
+  align-self: flex-start;
+  padding-top: 0px;
+}
+.home-section-separator6 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  border-color: rgba(120, 120, 120, 0.4);
+  border-style: dashed;
+  border-width: 1px;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-700);
+}
+.home-work-exp-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-left: 15%;
+  padding-right: 15%;
+  flex-direction: column;
 }
 .home-contact {
   width: 100%;
@@ -570,7 +655,7 @@
   margin-right: var(--dl-space-space-fourunits);
   flex-direction: column;
 }
-.home-link4 {
+.home-link10 {
   display: contents;
 }
 .home-email1 {
@@ -596,7 +681,7 @@
   margin-right: var(--dl-space-space-fourunits);
   flex-direction: column;
 }
-.home-link5 {
+.home-link11 {
   display: contents;
 }
 .home-cellphone {
@@ -678,11 +763,14 @@
   .home-skills-certs-separator {
     padding-left: 7%;
   }
-  .home-section-separator4 {
-    border-width: 1px;
-  }
   .home-certicates-container {
     padding-left: 7%;
+  }
+  .home-certs-work-exp-separator {
+    padding-left: 7%;
+  }
+  .home-section-separator6 {
+    border-width: 1px;
   }
 }
 @media(max-width: 1200px) {

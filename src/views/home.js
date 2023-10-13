@@ -4,14 +4,15 @@ import { Helmet } from 'react-helmet'
 
 import SkillComponent from '../components/skill-component'
 import CertificateComponent from '../components/certificate-component'
+import ExperienceComponent from '../components/experience-component'
 import './home.css'
 
 const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Marius Bledea - DevOps | Cloud Arhitect</title>
-        <meta property="og:title" content="Marius Bledea - DevOps | Cloud Arhitect" />
+        <title>Presentation Page</title>
+        <meta property="og:title" content="Presentation Page" />
       </Helmet>
       <div className="home-header">
         <div className="home-container-header">
@@ -21,7 +22,7 @@ const Home = (props) => {
                 Devops Solutions
               </strong>
             </a>
-            <a href="#about-me-hero" className="home-link1">
+            <a href="#about-me-hero" className="home-link01">
               <img
                 alt="image"
                 src="/my_logo.svg"
@@ -34,7 +35,7 @@ const Home = (props) => {
             href="https://www.linkedin.com/in/bledea-marius/"
             target="_blank"
             rel="noreferrer noopener"
-            className="home-link2"
+            className="home-link02"
           >
             <img
               alt="image"
@@ -47,7 +48,7 @@ const Home = (props) => {
             href="https://github.com/bledeamarius"
             target="_blank"
             rel="noreferrer noopener"
-            className="home-link3"
+            className="home-link03"
           >
             <img
               alt="image"
@@ -225,36 +226,120 @@ const Home = (props) => {
       </div>
       <div className="home-section-separator5"></div>
       <div id="certificates" className="home-certicates-container">
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name"
-          image_src="/az-305.svg"
-          text="Microsoft Certified: Azure Solutions Architect Expert"
-        ></CertificateComponent>
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name5"
-          image_src="/az-400.svg"
-          text="Microsoft Certified: DevOps Engineer Expert"
-        ></CertificateComponent>
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name4"
-          image_src="/terraform1.svg"
-          text="HashiCorp Certified: Terraform Associate (002)"
-        ></CertificateComponent>
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name1"
-          image_src="/az-500.svg"
-          text="Microsoft Certified: Azure Security Engineer Associate"
-        ></CertificateComponent>
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name3"
-          image_src="/az-104.svg"
-          text="Microsoft Certified: Azure Administrator Associate"
-        ></CertificateComponent>
-        <CertificateComponent
-          rootClassName="certificate-component-root-class-name2"
-          image_src="/az-900.svg"
-          text="Microsoft Certified: Azure Fundamentals"
-        ></CertificateComponent>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/640A06F906B5FD44?sharingId=D8E208BBDA770BE2"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link04"
+        >
+          <CertificateComponent
+            text="Microsoft Certified: Azure Solutions Architect Expert"
+            image_src="/az-305.svg"
+            rootClassName="certificate-component-root-class-name"
+            className="home-component06"
+          ></CertificateComponent>
+        </a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/4F11C4C9590D5B50?sharingId=D8E208BBDA770BE2"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link05"
+        >
+          <CertificateComponent
+            text="Microsoft Certified: DevOps Engineer Expert"
+            image_src="/az-400.svg"
+            rootClassName="certificate-component-root-class-name5"
+            className="home-component07"
+          ></CertificateComponent>
+        </a>
+        <a
+          href="https://www.credly.com/badges/518172f5-b5c6-4d8b-af30-e241b920b041/public_url"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link06"
+        >
+          <CertificateComponent
+            text="HashiCorp Certified: Terraform Associate (002)"
+            image_src="/terraform1.svg"
+            rootClassName="certificate-component-root-class-name4"
+            className="home-component08"
+          ></CertificateComponent>
+        </a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/AFFEABF605D14341?sharingId=D8E208BBDA770BE2"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link07"
+        >
+          <CertificateComponent
+            text="Microsoft Certified: Azure Security Engineer Associate"
+            image_src="/az-500.svg"
+            rootClassName="certificate-component-root-class-name1"
+            className="home-component09"
+          ></CertificateComponent>
+        </a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/367E55D797427299?sharingId=D8E208BBDA770BE2"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link08"
+        >
+          <CertificateComponent
+            text="Microsoft Certified: Azure Administrator Associate"
+            image_src="/az-104.svg"
+            rootClassName="certificate-component-root-class-name3"
+            className="home-component10"
+          ></CertificateComponent>
+        </a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/AEE5DE13514CF910?sharingId=D8E208BBDA770BE2"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="home-link09"
+        >
+          <CertificateComponent
+            text="Microsoft Certified: Azure Fundamentals"
+            image_src="/az-900.svg"
+            rootClassName="certificate-component-root-class-name2"
+            className="home-component11"
+          ></CertificateComponent>
+        </a>
+      </div>
+      <div id="workexperience" className="home-certs-work-exp-separator">
+        <span className="home-work-exp">
+          <span>Work Experience</span>
+          <br></br>
+        </span>
+        <div className="home-section-separator6"></div>
+      </div>
+      <div id="workexp-container" className="home-work-exp-container">
+        <ExperienceComponent
+          rootClassName="experience-component-root-class-name"
+          Period="Jun 2022 - present"
+          Company="Accesa"
+          Position="Senior DevOps Engineer"
+          Description1="Led 2 projects both on the infrastructure provisioning side, but also on implementing best practices in terms of building and deploying applications. Optimise build pipelines by decreasing the build time from 13 to 4 minutes (±70%)."
+          Description11="Worked with one of Germany's largest investment funds, where I exclusively work with cloud-native solutions. My responsibilities there encompass building highly scalable CI/CD pipelines in Azure DevOps, deploying applications using Helm charts, and conducting proof-of-concept (PoC) explorations of new technologies."
+          Description12="Actively propose innovative ways to enhance the overall development and deployment processes, making a significant impact on the organization's cloud-native strategy and its effectiveness in leveraging Azure services."
+        ></ExperienceComponent>
+        <ExperienceComponent
+          rootClassName="experience-component-root-class-name2"
+          Period="Jan 2021 - Jun 2022"
+          Company="Endava"
+          Position="DevOps Engineer"
+          Description1="As an integral member of a dynamic, cross-functional team, I contributed to the development of an insurance application for one of the UK's largest corporations. My role was centered on infrastructure management, which was fully hosted on the Azure cloud platform, and I took on the responsibility of overseeing monthly releases to production."
+          Description11="I proactively sought opportunities to enhance the efficiency and productivity of my colleagues. by keenly observing their daily routines and identifying areas where automation could eliminate repetitive tasks. "
+          Description12="This approach not only streamlined our workflow but also freed up valuable time for the team to focus on more strategic and high-impact activities."
+        ></ExperienceComponent>
+        <ExperienceComponent
+          Period="Nov 2020 - Dec 2020"
+          Company="Endava"
+          Position="DevOps Intern"
+          Description1="I immersed myself in a diverse array of technologies that form the backbone of modern software development and deployment. "
+          Description11=" I became proficient in Git for version control, network troubleshooting, Linux, Bash scripting, and cloud platforms like AWS and Azure. I also delved into the concepts of Continuous Integration and Continuous Deployment (CI/CD)."
+          Description12="The highlight of my internship was a project where I showcased my proficiency in these technologies. I successfully deployed a Java web application as a container on an AWS EC2 instance using Jenkins. The entire deployment process was automated and triggered by Git commits in GitLab."
+          rootClassName="experience-component-root-class-name1"
+        ></ExperienceComponent>
       </div>
       <div id="contact" className="home-contact">
         <div className="home-content-container">
@@ -263,7 +348,7 @@ const Home = (props) => {
             <div className="home-email">
               <a
                 href="mailto:bledea.marius97@gmail.com?subject=DevOps Solutions request"
-                className="home-link4"
+                className="home-link10"
               >
                 <img
                   alt="image"
@@ -280,7 +365,7 @@ const Home = (props) => {
               </a>
             </div>
             <div className="home-phone">
-              <a href="tel:+40751336708" className="home-link5">
+              <a href="tel:+40751336708" className="home-link11">
                 <img
                   alt="image"
                   src="/cellphone.svg"

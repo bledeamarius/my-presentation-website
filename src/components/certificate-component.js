@@ -23,15 +23,15 @@ const CertificateComponent = (props) => {
 
 CertificateComponent.defaultProps = {
   image_alt: 'image',
-  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   text: 'Text',
+  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   rootClassName: '',
 }
 
 CertificateComponent.propTypes = {
   image_alt: PropTypes.string,
-  image_src: PropTypes.string,
   text: PropTypes.string,
+  image_src: PropTypes.string,
   rootClassName: PropTypes.string,
 }
 
