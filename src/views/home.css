@@ -131,18 +131,18 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   background-size: cover;
   justify-content: space-between;
-  background-image: url("/adobestock-1500w.png");
+  background-image: url("/adobestock.svg");
   border-top-right-radius: var(--dl-radius-radius-radius2);
 }
 .home-hero-text-container {
-  width: 35%;
+  width: 38%;
   display: flex;
   align-items: flex-start;
   margin-left: 50px;
   flex-direction: column;
 }
 .home-name {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-style: normal;
   font-weight: 800;
   margin-bottom: var(--dl-space-space-tripleunit);
@@ -154,46 +154,33 @@
   color: var(--dl-color-gray-white);
   margin-bottom: var(--dl-space-space-tripleunit);
 }
-.home-text01 {
-  font-size: 18px;
-  font-family: Open Sans;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
-.home-text03 {
-  font-size: 18px;
-  font-family: Open Sans;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
 .home-container-buttons {
   flex: auto;
-  width: 83%;
+  width: 85%;
   height: 100px;
   display: flex;
   position: relative;
   flex-wrap: wrap;
   align-self: flex-start;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .home-cta-btn {
-  top: 0px;
-  left: 0px;
   color: var(--dl-color-gray-white);
   width: 189px;
   height: 41px;
-  position: absolute;
+  position: relative;
   align-self: flex-start;
   text-align: center;
-  align-items: center;
   border-radius: var(--dl-radius-radius-radius4);
   background-color: var(--dl-color-primary-100);
 }
 .home-text05 {
+  top: 7px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
   align-self: center;
 }
 .home-button {
@@ -201,7 +188,6 @@
   right: 0px;
   width: 189px;
   height: 41px;
-  margin: auto;
   display: flex;
   position: absolute;
   text-align: center;
@@ -236,17 +222,6 @@
   font-size: 36px;
   align-self: flex-start;
   padding-top: 0px;
-}
-.home-section-separator1 {
-  width: 100%;
-  height: 1px;
-  display: flex;
-  align-items: flex-start;
-  border-color: rgba(120, 120, 120, 0.4);
-  border-style: dashed;
-  border-width: 1px;
-  flex-direction: column;
-  background-color: var(--dl-color-gray-700);
 }
 .home-about-me-content {
   width: 100%;
@@ -424,7 +399,7 @@
 .home-text24 {
   text-transform: lowercase;
 }
-.home-section-separator2 {
+.home-section-separator1 {
   width: 100%;
   height: 40px;
   display: flex;
@@ -440,17 +415,6 @@
   font-size: 36px;
   align-self: flex-start;
   padding-top: 0px;
-}
-.home-section-separator3 {
-  width: 100%;
-  height: 1px;
-  display: flex;
-  align-items: flex-start;
-  border-color: rgba(120, 120, 120, 0.4);
-  border-style: dashed;
-  border-width: 1px;
-  flex-direction: column;
-  background-color: var(--dl-color-gray-700);
 }
 .home-skills1 {
   width: 100%;
@@ -490,24 +454,13 @@
   align-self: flex-start;
   padding-top: 0px;
 }
-.home-section-separator4 {
+.home-section-separator2 {
   width: 100%;
   height: 1px;
   display: flex;
   align-items: flex-start;
-  border-color: rgba(120, 120, 120, 0.4);
-  border-style: dashed;
+  border-color: #ffffff;
   border-width: 1px;
-  margin-bottom: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: 0px;
-  background-color: var(--dl-color-gray-700);
-}
-.home-section-separator5 {
-  width: 100%;
-  height: 1px;
-  display: flex;
-  align-items: flex-start;
   flex-direction: column;
   background-color: var(--dl-color-gray-700);
 }
@@ -527,37 +480,37 @@
 .home-link04 {
   display: contents;
 }
-.home-component06 {
+.home-component08 {
   text-decoration: none;
 }
 .home-link05 {
   display: contents;
 }
-.home-component07 {
+.home-component09 {
   text-decoration: none;
 }
 .home-link06 {
   display: contents;
 }
-.home-component08 {
+.home-component10 {
   text-decoration: none;
 }
 .home-link07 {
   display: contents;
 }
-.home-component09 {
+.home-component11 {
   text-decoration: none;
 }
 .home-link08 {
   display: contents;
 }
-.home-component10 {
+.home-component12 {
   text-decoration: none;
 }
 .home-link09 {
   display: contents;
 }
-.home-component11 {
+.home-component13 {
   text-decoration: none;
 }
 .home-certs-work-exp-separator {
@@ -578,17 +531,6 @@
   font-size: 36px;
   align-self: flex-start;
   padding-top: 0px;
-}
-.home-section-separator6 {
-  width: 100%;
-  height: 1px;
-  display: flex;
-  align-items: flex-start;
-  border-color: rgba(120, 120, 120, 0.4);
-  border-style: dashed;
-  border-width: 1px;
-  flex-direction: column;
-  background-color: var(--dl-color-gray-700);
 }
 .home-work-exp-container {
   flex: 0 0 auto;
@@ -702,11 +644,7 @@
     position: relative;
   }
   .home-container-buttons {
-    width: 100%;
     position: relative;
-  }
-  .home-text05 {
-    font-family: Open Sans;
   }
   .home-text06 {
     font-size: 18px;
@@ -751,11 +689,8 @@
     text-transform: none;
     text-decoration: none;
   }
-  .home-section-separator2 {
+  .home-section-separator1 {
     padding-left: 7%;
-  }
-  .home-section-separator3 {
-    border-width: 1px;
   }
   .home-container-skills {
     padding-left: 7%;
@@ -768,9 +703,6 @@
   }
   .home-certs-work-exp-separator {
     padding-left: 7%;
-  }
-  .home-section-separator6 {
-    border-width: 1px;
   }
 }
 @media(max-width: 1200px) {
@@ -800,6 +732,9 @@
   .home-hero-text-container {
     width: 80%;
     margin-left: 0px;
+  }
+  .home-short-description {
+    color: var(--dl-color-gray-white);
   }
   .home-container-buttons {
     width: 100%;
@@ -835,6 +770,9 @@
   }
 }
 @media(max-width: 767px) {
+  .home-hero-text-container {
+    position: relative;
+  }
   .home-name {
     text-align: center;
   }
@@ -842,9 +780,11 @@
     text-align: justify;
   }
   .home-container-buttons {
-    flex: inherit;
-    width: 100%;
-    max-width: 80%;
+    width: 70%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-self: flex-start;
+    align-items: stretch;
     flex-direction: row;
   }
   .home-cta-btn {
@@ -856,8 +796,9 @@
     align-self: center;
   }
   .home-button {
-    align-items: stretch;
-    justify-content: center;
+    right: 0px;
+    margin-left: 0px;
+    margin-right: var(--dl-space-space-unit);
   }
   .home-container3 {
     width: 100%;
@@ -884,18 +825,15 @@
   .home-container-buttons {
     max-width: 100%;
     max-height: 100%;
-    padding-left: 45%;
   }
   .home-cta-btn {
     right: 0px;
-    width: 139px;
     align-self: flex-start;
   }
   .home-text05 {
     font-size: 15px;
   }
   .home-button {
-    width: 149px;
     position: static;
     font-size: 14px;
   }

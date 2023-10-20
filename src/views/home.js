@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
+import SectionSeparatorComponent from '../components/section-separator-component'
 import SkillComponent from '../components/skill-component'
 import CertificateComponent from '../components/certificate-component'
 import ExperienceComponent from '../components/experience-component'
@@ -11,8 +12,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Presentation Page</title>
-        <meta property="og:title" content="Presentation Page" />
+        <title>Marius Bledea | DevOps</title>
+        <meta property="og:title" content="Marius Bledea | DevOps" />
       </Helmet>
       <div className="home-header">
         <div className="home-container-header">
@@ -62,12 +63,12 @@ const Home = (props) => {
       <div id="about-me-hero" className="home-about-me-hero">
         <div className="home-hero-text-container">
           <h1 className="home-name">Marius Bledea</h1>
-          <h2 className="home-title">DevOps Engineer | Cloud Arhitect</h2>
+          <h2 className="home-title">DevOps Consultant | Cloud Arhitect</h2>
           <span className="home-short-description">
-            <span>DevOps Engineer experienced in</span>
-            <br className="home-text01 Section-Text"></br>
+            <span>DevOps Consultant experienced in</span>
+            <br className="Section-Text"></br>
             <span>Azure, Terraform, Kubernetes, and</span>
-            <br className="home-text03 Section-Text"></br>
+            <br className="Section-Text"></br>
             <span>Cloud Native Solutions.</span>
           </span>
           <div className="home-container-buttons">
@@ -88,7 +89,7 @@ const Home = (props) => {
       </div>
       <div className="home-section-separator">
         <span className="home-about-me">About Me</span>
-        <div id="subtitles" className="home-section-separator1"></div>
+        <SectionSeparatorComponent rootClassName="section-separator-component-root-class-name"></SectionSeparatorComponent>
       </div>
       <div id="aboutme" className="home-about-me-content">
         <div className="home-container1">
@@ -169,12 +170,12 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <div className="home-section-separator2">
+      <div className="home-section-separator1">
         <span className="home-skills">
           <span>Skills and Expertise</span>
           <br></br>
         </span>
-        <div className="home-section-separator3"></div>
+        <SectionSeparatorComponent rootClassName="section-separator-component-root-class-name1"></SectionSeparatorComponent>
       </div>
       <div id="skills" className="home-skills1"></div>
       <div className="home-container-skills">
@@ -194,7 +195,7 @@ const Home = (props) => {
         ></SkillComponent>
         <SkillComponent
           text2="Infrastructure as Code (IaC) Expertise"
-          text21="Proficient in writing infrastructure as code (IaC) templates, ensuring consistent and reproducible deployments while reducing manual intervention"
+          text21="Proficient in writing IaC templates, ensuring consistent and reproducible deployments while reducing manual intervention."
           image_src1="/terraform.svg"
           rootClassName="skill-component-root-class-name4"
         ></SkillComponent>
@@ -222,9 +223,8 @@ const Home = (props) => {
           <span>Certificates</span>
           <br></br>
         </span>
-        <div className="home-section-separator4"></div>
+        <div className="home-section-separator2"></div>
       </div>
-      <div className="home-section-separator5"></div>
       <div id="certificates" className="home-certicates-container">
         <a
           href="https://learn.microsoft.com/api/credentials/share/en-us/MariusBledea/640A06F906B5FD44?sharingId=D8E208BBDA770BE2"
@@ -236,7 +236,7 @@ const Home = (props) => {
             text="Microsoft Certified: Azure Solutions Architect Expert"
             image_src="/az-305.svg"
             rootClassName="certificate-component-root-class-name"
-            className="home-component06"
+            className="home-component08"
           ></CertificateComponent>
         </a>
         <a
@@ -249,7 +249,7 @@ const Home = (props) => {
             text="Microsoft Certified: DevOps Engineer Expert"
             image_src="/az-400.svg"
             rootClassName="certificate-component-root-class-name5"
-            className="home-component07"
+            className="home-component09"
           ></CertificateComponent>
         </a>
         <a
@@ -262,7 +262,7 @@ const Home = (props) => {
             text="HashiCorp Certified: Terraform Associate (002)"
             image_src="/terraform1.svg"
             rootClassName="certificate-component-root-class-name4"
-            className="home-component08"
+            className="home-component10"
           ></CertificateComponent>
         </a>
         <a
@@ -275,7 +275,7 @@ const Home = (props) => {
             text="Microsoft Certified: Azure Security Engineer Associate"
             image_src="/az-500.svg"
             rootClassName="certificate-component-root-class-name1"
-            className="home-component09"
+            className="home-component11"
           ></CertificateComponent>
         </a>
         <a
@@ -288,7 +288,7 @@ const Home = (props) => {
             text="Microsoft Certified: Azure Administrator Associate"
             image_src="/az-104.svg"
             rootClassName="certificate-component-root-class-name3"
-            className="home-component10"
+            className="home-component12"
           ></CertificateComponent>
         </a>
         <a
@@ -301,7 +301,7 @@ const Home = (props) => {
             text="Microsoft Certified: Azure Fundamentals"
             image_src="/az-900.svg"
             rootClassName="certificate-component-root-class-name2"
-            className="home-component11"
+            className="home-component13"
           ></CertificateComponent>
         </a>
       </div>
@@ -310,26 +310,26 @@ const Home = (props) => {
           <span>Work Experience</span>
           <br></br>
         </span>
-        <div className="home-section-separator6"></div>
+        <SectionSeparatorComponent rootClassName="section-separator-component-root-class-name2"></SectionSeparatorComponent>
       </div>
       <div id="workexp-container" className="home-work-exp-container">
         <ExperienceComponent
-          rootClassName="experience-component-root-class-name"
           Period="Jun 2022 - present"
           Company="Accesa"
           Position="Senior DevOps Engineer"
           Description1="Led 2 projects both on the infrastructure provisioning side, but also on implementing best practices in terms of building and deploying applications. Optimise build pipelines by decreasing the build time from 13 to 4 minutes (±70%)."
           Description11="Worked with one of Germany's largest investment funds, where I exclusively work with cloud-native solutions. My responsibilities there encompass building highly scalable CI/CD pipelines in Azure DevOps, deploying applications using Helm charts, and conducting proof-of-concept (PoC) explorations of new technologies."
           Description12="Actively propose innovative ways to enhance the overall development and deployment processes, making a significant impact on the organization's cloud-native strategy and its effectiveness in leveraging Azure services."
+          rootClassName="experience-component-root-class-name"
         ></ExperienceComponent>
         <ExperienceComponent
-          rootClassName="experience-component-root-class-name2"
           Period="Jan 2021 - Jun 2022"
           Company="Endava"
           Position="DevOps Engineer"
           Description1="As an integral member of a dynamic, cross-functional team, I contributed to the development of an insurance application for one of the UK's largest corporations. My role was centered on infrastructure management, which was fully hosted on the Azure cloud platform, and I took on the responsibility of overseeing monthly releases to production."
           Description11="I proactively sought opportunities to enhance the efficiency and productivity of my colleagues. by keenly observing their daily routines and identifying areas where automation could eliminate repetitive tasks. "
           Description12="This approach not only streamlined our workflow but also freed up valuable time for the team to focus on more strategic and high-impact activities."
+          rootClassName="experience-component-root-class-name2"
         ></ExperienceComponent>
         <ExperienceComponent
           Period="Nov 2020 - Dec 2020"

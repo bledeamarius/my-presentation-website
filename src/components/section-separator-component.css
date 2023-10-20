@@ -1,0 +1,21 @@
+.section-separator-component-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.section-separator-component-section-separator {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-width: 1px;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-700);
+}
+
+
+
