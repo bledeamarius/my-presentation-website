@@ -21,10 +21,8 @@ const SkillComponent = (props) => {
 }
 
 SkillComponent.defaultProps = {
-  image_src1: 'https://play.teleporthq.io/static/svg/default-img.svg',
   rootClassName: '',
   text21: 'Text',
-  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   text2: 'Text',
   text: 'Text',
   image_alt1: 'image',
