@@ -131,7 +131,7 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   background-size: cover;
   justify-content: space-between;
-  background-image: url("/adobestock.png");
+  background-image: url("/adobestock.svg");
   border-top-right-radius: var(--dl-radius-radius-radius2);
 }
 .home-hero-text-container {
