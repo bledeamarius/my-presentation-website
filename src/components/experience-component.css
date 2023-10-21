@@ -94,3 +94,40 @@
 
 
 
+@media(max-width: 1600px) {
+  .experience-component-container3 {
+    font-size: 17px;
+  }
+}
+@media(max-width: 1200px) {
+  .experience-component-container3 {
+    font-size: 15px;
+  }
+}
+@media(max-width: 991px) {
+  .experience-component-container2 {
+    font-size: 80%;
+  }
+  .experience-component-container3 {
+    font-size: 13px;
+  }
+}
+@media(max-width: 767px) {
+  .experience-component-container3 {
+    font-size: 14px;
+  }
+}
+@media(max-width: 390px) {
+  .experience-component-container1 {
+    font-size: 10px;
+  }
+  .experience-component-company-text {
+    font-size: 17px;
+  }
+  .experience-component-position-text {
+    font: 14px;
+  }
+  .experience-component-container3 {
+    font-size: 10px;
+  }
+}

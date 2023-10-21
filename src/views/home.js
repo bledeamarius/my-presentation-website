@@ -12,8 +12,16 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Marius Bledea | DevOps</title>
-        <meta property="og:title" content="Marius Bledea | DevOps" />
+        <title>Marius Bledea | DevOps Solutions</title>
+        <meta
+          name="description"
+          content="DevOps Consultant and Cloud Architect specializing in Azure, Terraform, Kubernetes, and cloud-native solutions."
+        />
+        <meta property="og:title" content="Marius Bledea | DevOps Solutions" />
+        <meta
+          property="og:description"
+          content="DevOps Consultant and Cloud Architect specializing in Azure, Terraform, Kubernetes, and cloud-native solutions."
+        />
       </Helmet>
       <div className="home-header">
         <div className="home-container-header">
@@ -66,9 +74,9 @@ const Home = (props) => {
           <h2 className="home-title">DevOps Consultant | Cloud Arhitect</h2>
           <span className="home-short-description">
             <span>DevOps Consultant experienced in</span>
-            <br className="Section-Text"></br>
+            <br className="home-text01 Section-Text"></br>
             <span>Azure, Terraform, Kubernetes, and</span>
-            <br className="Section-Text"></br>
+            <br className="home-text03 Section-Text"></br>
             <span>Cloud Native Solutions.</span>
           </span>
           <div className="home-container-buttons">
@@ -298,7 +306,7 @@ const Home = (props) => {
           className="home-link09"
         >
           <CertificateComponent
-            text="Microsoft Certified: Azure Fundamentals"
+            text="Microsoft Certified: Azure Fundamentals 900"
             image_src="/az-900.svg"
             rootClassName="certificate-component-root-class-name2"
             className="home-component13"

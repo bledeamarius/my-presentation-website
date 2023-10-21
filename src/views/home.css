@@ -131,7 +131,7 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   background-size: cover;
   justify-content: space-between;
-  background-image: url("/adobestock.svg");
+  background-image: url("/adobestock.png");
   border-top-right-radius: var(--dl-radius-radius-radius2);
 }
 .home-hero-text-container {
@@ -143,16 +143,37 @@
 }
 .home-name {
   color: rgb(255, 255, 255);
+  z-index: 100;
   font-style: normal;
+  font-family: "Plus Jakarta Sans";
   font-weight: 800;
   margin-bottom: var(--dl-space-space-tripleunit);
 }
 .home-title {
   color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 200;
 }
 .home-short-description {
   color: var(--dl-color-gray-white);
+  font-family: "Plus Jakarta Sans";
+  padding-top: var(--dl-space-space-doubleunit);
   margin-bottom: var(--dl-space-space-tripleunit);
+}
+.home-text01 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
+}
+.home-text03 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
 }
 .home-container-buttons {
   flex: auto;
@@ -281,6 +302,7 @@
   font-size: 31px;
   font-style: normal;
   text-align: left;
+  font-family: "Plus Jakarta Sans";
   font-weight: 700;
   margin-left: var(--dl-space-space-tripleunit);
   letter-spacing: 1px;
@@ -759,6 +781,13 @@
   .home-completed-proj-desc-container {
     width: 300px;
   }
+  .home-skills-certs-separator {
+    padding-bottom: 7%;
+  }
+  .home-work-exp-container {
+    padding-left: 5%;
+    padding-right: 10%;
+  }
   .home-contact-method-container {
     flex-wrap: wrap;
   }
@@ -805,6 +834,16 @@
   }
   .home-heading-container {
     width: 100%;
+  }
+  .home-skills-certs-separator {
+    padding-bottom: 10%;
+  }
+  .home-certs-work-exp-separator {
+    padding-bottom: 10%;
+  }
+  .home-work-exp-container {
+    padding-left: 0;
+    padding-right: 0;
   }
   .home-contact {
     padding-right: var(--dl-space-space-tripleunit);
@@ -870,6 +909,13 @@
   .home-nr-container {
     width: auto;
     justify-content: center;
+  }
+  .home-certs-work-exp-separator {
+    padding-bottom: 14%;
+  }
+  .home-work-exp-container {
+    padding-left: 0;
+    padding-right: 0;
   }
   .home-content-container {
     padding-left: 0px;
